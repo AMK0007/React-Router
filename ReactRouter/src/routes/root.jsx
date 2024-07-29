@@ -30,7 +30,7 @@ export default function Root() {
   return (
     <>
       <div id="sidebar">
-        <h1>React Router Contacts</h1>
+        <h1>Ahmed Mustafa Contacts</h1>
         <div>
           <Form id="search-form" role="search">
             <input
@@ -97,6 +97,6 @@ export async function loader({ request }) {
   const url = new URL(request.url);
   const q = url.searchParams.get("q");
   const contacts = await getContacts(q);
-  console.log('asd',contacts, q)
+  console.log('amk',contacts, q)
   return { contacts, q };
 }
